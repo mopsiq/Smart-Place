@@ -1,0 +1,102 @@
+.feedback__header {
+  text-align: center;
+  margin-bottom: 4rem;
+  
+  font-size: $fontXL;
+}
+.feedback__inner {
+  display: flex;
+  justify-content: center;
+}
+.feedback__item {
+  display: flex;
+  justify-content: center;
+
+  font-size: $fontStandart;
+}
+
+.feedback__block {
+  margin: 0 2rem 4rem;
+}
+
+.feedback__type {
+  font-size: $fontSmall;
+  color: #ADADAD;
+  margin: 1.2rem 0 0.4rem;
+}
+
+
+.feedback__alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  
+  padding: 2rem;
+
+  background-color: $black;
+  border-radius: 10px;
+  color: $white;
+
+  position: absolute;
+  top: 0;
+  z-index: 99;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity 1s linear;
+  
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+   
+  }
+
+  &.disabled {
+    animation-name: animDelete;
+    animation-duration: .5s;
+  }
+}
+
+.feedback__rating {
+  margin-top: 1rem;
+}
+
+@keyframes animDelete {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  40% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

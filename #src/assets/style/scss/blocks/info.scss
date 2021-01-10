@@ -1,0 +1,58 @@
+.info__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.info__item {
+    text-align: center;
+    margin-top: 4rem;
+    border-right: 1px solid #CDCCCC
+}
+
+.info__title {
+  color: $blue;
+  font-size: 3rem;
+  font-weight: 500;
+
+  margin-bottom: 1rem;
+}
+
+.info__poster {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  margin-top: 6rem;
+}
+
+.info__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info__content {
+  position: absolute;
+  bottom: 0;
+  left: 60%;
+  z-index: 1;
+  width: 370px;
+  background-color: $blue;
+  padding: 1.5rem 1rem;
+
+ 
+}
+
+.info__text {
+  font-size: $fontStandartX;
+  font-weight: 500;
+  color: $white;
+
+  margin-bottom: 1rem;
+}
+
+.info__author {
+  color: $white;
+  font-size: $fontStandart;
+  font-weight: 300;
+  text-align: right;
+}

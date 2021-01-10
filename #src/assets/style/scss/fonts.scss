@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Gordita';
+    src: url(../fonts/GorditaRegular.ttf) format('ttf'),
+         url(../fonts/GorditaRegular.woff) format('woff'),     
+         url(../fonts/GorditaRegular.woff2) format('woff2');
+    font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url(../fonts/GorditaMedium.ttf) format('ttf'),
+       url(../fonts/GorditaMedium.woff) format('woff'),     
+       url(../fonts/GorditaMedium.woff2) format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url(../fonts/GorditaBold.ttf) format('ttf'),
+       url(../fonts/GorditaBold.woff) format('woff'),     
+       url(../fonts/GorditaBold.woff2) format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url(../fonts/GorditaBlack.ttf) format('ttf'),
+       url(../fonts/GorditaBlack.woff) format('woff'),     
+       url(../fonts/GorditaBlack.woff2) format('woff2');
+  font-weight: 900;
+}

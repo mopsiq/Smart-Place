@@ -1,0 +1,146 @@
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background: url(../images/backgrounds/background-intro.webp) center no-repeat;
+  background-size: cover;
+
+}
+
+.intro__inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.intro__subtitle {
+    margin-bottom: 2rem;
+    &--link {
+       font-weight: 300;
+       font-size: $fontLarge;
+
+       &.active {
+         font-size: $fontXXL;
+         font-weight: 700;
+         margin: 1rem 0;
+       }
+    }
+}
+
+.intro__item:last-child {
+  margin-top: 4rem;
+}
+
+.intro__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.intro__btn {
+  @include button-large($white, $blue, 1rem 1.5rem);
+  clip-path: polygon(0 0, 100% 0%, 100% 98%, 0% 100%);
+  transition: clip-path .4s;
+  &:hover {
+    cursor: pointer;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+}
+.intro__menu {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #F4F5FF;
+
+
+  position: fixed;
+  z-index: 98;
+  top: -120vh;
+  
+
+  overflow-y: scroll;
+  transition: top .2s linear;
+
+  &.active {
+    top: 0;
+    transition: top .4s linear;
+  }
+}
+
+.active {
+  display: flex;
+  text-align: center;
+}
+
+
+.intro__block {
+  margin-top: 6rem;
+}
+
+.intro__list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &--title {
+    color: $black;
+    font-size: $fontStandartX;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  &--subtitle {
+    color: #323448;
+    font-weight: 500;
+    font-size: $fontStandartX;
+  }
+
+}
+
+.intro__product {
+    color: $black;
+    font-weight: 700;
+    font-size: $fontLarge;
+    position: relative;
+
+    margin: 1rem 0;
+    
+    &#prod1 {
+      &:before {
+        content: url('../images/icons/menu-product1.png');
+        position: absolute;
+        top: -2rem;
+        left: -3rem;
+      }
+    }
+    &#prod2 {
+      &:before {
+        content: url('../images/icons/menu-product2.png');
+        position: absolute;
+        top: -2rem;
+        left: -3rem;
+      }
+    }
+    &#prod3 {
+      &:before {
+        content: url('../images/icons/menu-product3.png');
+        position: absolute;
+        top: -2rem;
+        left: -3rem;
+      }
+    }
+    &#prod4 {
+      &:before {
+        content: url('../images/icons/menu-product4.png');
+        position: absolute;
+        top: -2rem;
+        left: -3rem;
+      }
+    }
+}
+

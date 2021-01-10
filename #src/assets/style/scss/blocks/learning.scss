@@ -1,0 +1,55 @@
+.learning__inner {
+  position: relative;
+}
+
+.learning__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.learning__item {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 2rem 0;
+  min-width: 0;
+}
+
+.learning__block {
+  margin: 5rem 0;
+}
+
+.learning__text {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.learning__title {
+  font-weight: 500;
+  font-size: $fontXXL;
+  line-height: 1.1;
+  color: $black;
+
+  margin: 2rem 0;
+}
+
+.learning__subtitle {
+  font-weight: 400;
+  font-size: $fontStandart;
+  color: #352E4F;
+}
+
+.learning__img {
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+.learning__test {
+  width: 100%;
+}

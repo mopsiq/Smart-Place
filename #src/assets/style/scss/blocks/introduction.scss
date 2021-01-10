@@ -1,0 +1,62 @@
+.introduction__text {
+    font-size: $fontXL;
+    font-weight: 300;
+    color: inherit;
+    margin-bottom: 2rem;
+
+    &--head {
+      max-width: 350px;
+    }
+    &--bottom {
+     max-width: 500px;
+     margin: 4rem 0 2rem 0;
+   }
+    &--blue {
+      color: $blue;
+    }
+    &--white {
+      color: $white;
+    }
+}
+
+.introduction__item {
+  padding: 1rem 0;
+  border-bottom: 1px solid $gray;
+}
+
+.introduction__title {
+  color: $blue;
+  font-weight: 500;
+  font-size: $fontStandart;
+
+  &--white {
+    color: $white;
+  }
+}
+
+.introduction__subtitle {
+  font-weight: 500;
+  font-size: $fontMedium;
+  color: $black;
+}
+
+.introduction__poster {
+  margin: 2rem 0;
+}
+
+.introduction__banner {
+  color: $white;
+  background-color: $blue;
+  padding: 3rem;
+  text-align: center;
+}
+
+.introduction__btn {
+  &--blue {
+    @include button-large($blue, $white, 1rem)
+  }
+
+  &--white {
+    @include button-large($white, $blue, 1rem)
+  }
+}

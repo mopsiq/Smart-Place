@@ -1,0 +1,149 @@
+.header {
+  background-color: transparent;
+
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: $white;
+
+  &.fixed {
+    position: fixed;
+    background-color: #4B5DFF;
+    z-index: 99;
+  }
+
+  &.active {
+    background-color: transparent;
+  }
+}
+
+.header__inner {
+  margin: 2rem 0;
+}
+
+.header__logo {
+  color: $white;
+  width: 150px;
+  font-size: $fontLarge;
+  font-weight: 700;
+  position: relative;
+  z-index: 99;
+  
+  &:before {
+      content: url('../images/icons/logo-light.png');
+      position: absolute;
+      top: 0rem;
+      right: 8rem;
+      z-index: -1;
+  }
+
+}
+
+.header__logo.active {
+  color: #3C3F7B;
+
+
+  &:before {
+    content: url('../images/icons/logo-dark.png');
+  }
+
+}
+
+.header__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.header__menu {
+
+  &--link {
+      color: $white;
+      padding-right: 1rem;
+
+      &:last-child {
+        padding: 0;
+      }
+
+  }
+
+}
+
+.header__button {
+  color: $white;
+  border-radius: 10px;
+  border: 1px solid $white;
+  padding: 1rem 3rem;
+  z-index: 99;
+
+  &.active {
+    color: #323448;
+    border-color: #323448;
+  }
+}
+
+.header__burger {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  margin-left: 4rem;
+
+  z-index: 99;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+}
+
+.burger__menu {
+  display: block;
+  background-color: #fff;
+  width: 32px;
+  height: 2px;
+  position: relative;
+  z-index: 1;
+
+  &:before,
+  &:after {
+    content: '';
+    background-color: #fff;
+    width: 32px;
+    height: 2px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  &:before {
+      bottom: 9px;
+  }
+
+  &:after {
+      top: 9px;
+  }
+}
+
+.burger__menu.active {
+  background-color: transparent;
+  &:before,
+  &:after {
+    top: 0;
+    transition: transform .3s linear;
+    background-color: $blue;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+
+

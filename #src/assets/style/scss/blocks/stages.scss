@@ -1,0 +1,36 @@
+.stages__head {
+  text-align: center;
+}
+.stages__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.stages__level {
+  font-weight: 500;
+  font-size: $fontLarge;
+  text-align: center;
+}
+
+.stages__item {
+  margin: 2rem 0;
+}
+
+.stages__content {
+  border-left: 7px solid $blue;
+  border-top: 7px solid $blue;
+  padding: 1rem;
+
+  font-size: $fontLarge;
+  font-weight: 500
+}
+.stages__name {
+  margin-bottom: 1rem;
+}
+.stages__subtitle {
+  margin-top: 1rem;
+  font-size: $fontSmall;
+  font-weight: 400;
+  font-style: italic;
+
+}

@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.min.css">
+    <title>newProject</title></head>
+<body>
+  <svg style="display: none;">
+  
+      <symbol id="twitter" viewBox="0 0 512 512">
+          <g>
+            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+              c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+              c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+              c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+              c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+              c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+              C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+              C480.224,136.96,497.728,118.496,512,97.248z"/>
+          </g>
+      </symbol>
+  
+      <symbol id="youtube" viewBox="0 -62 512.00199 512">
+        <g>
+          <path d="m334.808594 170.992188-113.113282-61.890626c-6.503906-3.558593-14.191406-3.425781-20.566406.351563-6.378906 3.78125-10.183594 10.460937-10.183594 17.875v122.71875c0 7.378906 3.78125 14.046875 10.117188 17.832031 3.308594 1.976563 6.976562 2.96875 10.652344 2.96875 3.367187 0 6.742187-.832031 9.847656-2.503906l113.117188-60.824219c6.714843-3.613281 10.90625-10.59375 10.9375-18.222656.027343-7.628906-4.113282-14.640625-10.808594-18.304687zm-113.859375 63.617187v-91.71875l84.539062 46.257813zm0 0"/><path d="m508.234375 91.527344-.023437-.234375c-.433594-4.121094-4.75-40.777344-22.570313-59.421875-20.597656-21.929688-43.949219-24.59375-55.179687-25.871094-.929688-.105469-1.78125-.203125-2.542969-.304688l-.894531-.09375c-67.6875-4.921874-169.910157-5.5937495-170.933594-5.59765575l-.089844-.00390625-.089844.00390625c-1.023437.00390625-103.246094.67578175-171.542968 5.59765575l-.902344.09375c-.726563.097657-1.527344.1875-2.398438.289063-11.101562 1.28125-34.203125 3.949219-54.859375 26.671875-16.972656 18.445312-21.878906 54.316406-22.382812 58.347656l-.058594.523438c-.152344 1.714844-3.765625 42.539062-3.765625 83.523437v38.3125c0 40.984375 3.613281 81.808594 3.765625 83.527344l.027344.257813c.433593 4.054687 4.746093 40.039062 22.484375 58.691406 19.367187 21.195312 43.855468 24 57.027344 25.507812 2.082031.238282 3.875.441406 5.097656.65625l1.183594.164063c39.082031 3.71875 161.617187 5.550781 166.8125 5.625l.15625.003906.15625-.003906c1.023437-.003907 103.242187-.675781 170.929687-5.597657l.894531-.09375c.855469-.113281 1.816406-.214843 2.871094-.324218 11.039062-1.171875 34.015625-3.605469 54.386719-26.019532 16.972656-18.449218 21.882812-54.320312 22.382812-58.347656l.058594-.523437c.152344-1.71875 3.769531-42.539063 3.769531-83.523438v-38.3125c-.003906-40.984375-3.617187-81.804687-3.769531-83.523437zm-26.238281 121.835937c0 37.933594-3.3125 77-3.625 80.585938-1.273438 9.878906-6.449219 32.574219-14.71875 41.5625-12.75 14.027343-25.847656 15.417969-35.410156 16.429687-1.15625.121094-2.226563.238282-3.195313.359375-65.46875 4.734375-163.832031 5.460938-168.363281 5.488281-5.082032-.074218-125.824219-1.921874-163.714844-5.441406-1.941406-.316406-4.039062-.558594-6.25-.808594-11.214844-1.285156-26.566406-3.042968-38.371094-16.027343l-.277344-.296875c-8.125-8.464844-13.152343-29.6875-14.429687-41.148438-.238281-2.710937-3.636719-42.238281-3.636719-80.703125v-38.3125c0-37.890625 3.304688-76.914062 3.625-80.574219 1.519532-11.636718 6.792969-32.957031 14.71875-41.574218 13.140625-14.453125 26.996094-16.054688 36.160156-17.113282.875-.101562 1.691407-.195312 2.445313-.292968 66.421875-4.757813 165.492187-5.464844 169.046875-5.492188 3.554688.023438 102.589844.734375 168.421875 5.492188.808594.101562 1.691406.203125 2.640625.3125 9.425781 1.074218 23.671875 2.699218 36.746094 16.644531l.121094.128906c8.125 8.464844 13.152343 30.058594 14.429687 41.75.226563 2.558594 3.636719 42.171875 3.636719 80.71875zm0 0"/>
+        </g>
+      </symbol>
+  
+      <symbol id="linked" viewBox="0 0 512 512">
+        <g>
+          <path d="M68.12,4.267c-18.773,0-35.84,6.827-48.64,19.627C5.827,37.547-1,54.613-1,72.533c0,18.773,7.68,35.84,20.48,48.64
+  				c12.8,12.8,30.72,20.48,47.787,19.627c0,0,0.853,0,1.707,0c17.067,0,33.28-6.827,46.08-19.627
+  				c12.8-12.8,20.48-29.867,20.48-48.64c0.853-17.92-6.827-34.987-19.627-47.787C103.107,11.093,86.04,4.267,68.12,4.267z
+  				 M103.107,109.227c-9.387,9.387-22.187,15.36-35.84,14.507c-12.8,0-26.453-5.12-35.84-14.507
+  				c-10.24-9.387-15.36-23.04-15.36-36.693s5.12-26.453,15.36-36.693c9.387-9.387,22.187-14.507,36.693-14.507
+  				c12.8,0,25.6,5.12,34.987,14.507c10.24,10.24,15.36,23.04,15.36,36.693S113.347,99.84,103.107,109.227z"/>
+  			<path d="M101.4,157.867H32.28c-13.653,0-24.747,11.093-24.747,25.6v298.667c0,13.653,11.947,25.6,25.6,25.6H101.4
+  				c13.653,0,25.6-11.947,25.6-24.747v-299.52C127,169.813,115.053,157.867,101.4,157.867z M109.933,482.987
+  				c0,4.267-4.267,7.68-8.533,7.68H33.133c-4.267,0-8.533-4.267-8.533-8.533V183.467c0-4.267,3.413-8.533,7.68-8.533h69.12
+  				c4.267,0,8.533,4.267,8.533,8.533V482.987z"/>
+  			<path d="M391.533,149.333h-17.92c-33.28,0-64.853,14.507-85.333,37.547v-11.947c0-8.533-8.533-17.067-17.067-17.067H185.88
+  				c-7.68,0-17.067,6.827-17.067,16.213v318.293c0,9.387,9.387,15.36,17.067,15.36h93.867c7.68,0,17.067-5.973,17.067-15.36v-184.32
+  				c0-28.16,20.48-50.347,46.933-50.347c13.653,0,26.453,5.12,35.84,14.507c8.533,7.68,11.947,19.627,11.947,34.987v183.467
+  				c0,8.533,8.533,17.067,17.067,17.067h85.333c8.533,0,17.067-8.533,17.067-17.067v-220.16
+  				C511,202.24,458.947,149.333,391.533,149.333z M493.933,489.813l-0.853,0.853h-83.627L408.6,307.2
+  				c0-20.48-5.12-35.84-16.213-46.933c-12.8-12.8-29.867-19.627-47.787-19.627c-35.84,0.853-64,29.867-64,67.413v182.613h-93.867
+  				V174.933h84.48l0.853,0.853v53.76l23.04-23.04l0.853-0.853c17.067-23.893,46.933-39.253,78.507-39.253h17.92
+  				c57.173,0,101.547,46.08,101.547,104.107V489.813z"/>
+        </g>
+      </symbol>
+  
+      <symbol id="star" viewBox="0 -10 511.98645 511">
+        <g>
+          <path d="m499.574219 188.503906c-3.199219-9.921875-11.988281-16.9375-22.398438-17.898437l-141.355469-12.84375-55.894531-130.835938c-4.117187-9.578125-13.503906-15.765625-23.933593-15.765625-10.433594 0-19.820313 6.207032-23.9375 15.808594l-55.890626 130.816406-141.378906 12.839844c-10.386718.941406-19.175781 7.957031-22.378906 17.878906-3.21875 9.921875-.234375 20.777344 7.617188 27.648438l106.859374 93.695312-31.511718 138.773438c-2.300782 10.199218 1.664062 20.734375 10.136718 26.878906 4.519532 3.328125 9.875 4.992188 15.230469 4.992188 4.628907 0 9.238281-1.234376 13.355469-3.710938l121.898438-72.894531 121.875 72.875c8.917968 5.351562 20.160156 4.882812 28.609374-1.238281 8.46875-6.144532 12.4375-16.683594 10.132813-26.882813l-31.507813-138.769531 106.859376-93.699219c7.847656-6.867187 10.835937-17.726563 7.613281-27.667969zm0 0"/><path d="m114.617188 491.136719c-5.632813 0-11.203126-1.746094-15.957032-5.183594-8.855468-6.398437-12.992187-17.429687-10.582031-28.09375l32.9375-145.066406-111.703125-97.964844c-8.210938-7.1875-11.347656-18.515625-7.976562-28.90625 3.371093-10.367187 12.542968-17.726563 23.402343-18.730469l147.820313-13.417968 58.410156-136.746094c4.308594-10.046875 14.121094-16.535156 25.023438-16.535156 10.902343 0 20.714843 6.488281 25.023437 16.511718l58.410156 136.769532 147.796875 13.417968c10.882813.980469 20.054688 8.34375 23.425782 18.710938 3.371093 10.386718.253906 21.738281-7.980469 28.90625l-111.679688 97.941406 32.9375 145.066406c2.414063 10.667969-1.726562 21.695313-10.578125 28.09375-8.8125 6.378906-20.566406 6.914063-29.890625 1.324219l-127.464843-76.160156-127.445313 76.203125c-4.308594 2.582031-9.109375 3.859375-13.929687 3.859375zm141.375-112.871094c4.84375 0 9.640624 1.300781 13.953124 3.859375l120.277344 71.9375-31.085937-136.941406c-2.21875-9.769532 1.089843-19.925782 8.621093-26.515625l105.472657-92.523438-139.542969-12.671875c-10.003906-.894531-18.667969-7.1875-22.59375-16.46875l-55.101562-129.046875-55.148438 129.066407c-3.902344 9.238281-12.5625 15.53125-22.589844 16.429687l-139.519531 12.671875 105.46875 92.519531c7.554687 6.59375 10.839844 16.769531 8.621094 26.539063l-31.082031 136.941406 120.277343-71.9375c4.328125-2.558594 9.128907-3.859375 13.972657-3.859375zm-84.585938-221.824219v.019532zm169.152344-.066406v.023438s0 0 0-.023438zm0 0" fill="#000000"/>
+        </g>
+      </symbol>
+  
+  
+  </svg>  <header class="header">
+    <div class="container">
+        <div class="header__inner">
+  
+              <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                    <div class="header__item">
+                        <a data-scroll href="#intro" class="header__logo">International Smart Place</a>
+                    </div>
+                  </div>
+  
+                  <div class="col-lg-7 col-md-7 d-sm-none col-7">
+                    <div class="header__item">
+                      <nav class="header__menu">
+                          <a data-scroll href="#learning" class="header__menu--link">Как проходит обучение</a>
+                          <a data-scroll href="#advantages" class="header__menu--link">Преимущества</a>
+                          <a data-scroll href="#cooperation" class="header__menu--link">Инструкция</a>
+                          <a data-scroll href="#team" class="header__menu--link">Преподаватели</a>
+                      </nav>
+                    </div>
+                  </div>
+  
+  
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                   <div class="header__item">
+                      <a href="#" class="header__button">Войти</a>
+                      <div class="header__burger">
+                          <span class="burger__menu"></span>
+                      </div>
+                   </div>
+                  </div>
+  
+              </div>
+  
+        </div>
+  
+        
+  
+      </div>
+  </header>
+  
+  <div class="content" id="content">
+    <!-- MODAL-WINDOW -->
+    <div class="wrapper">
+    </div>
+    <div class="modal">
+        <div class="modal__content">
+            <div class="modal__block">
+                <input placeholder="Login" type="text" class="modal__input">
+            </div>
+            <form action="url" class="modal__form">
+                <div class="modal__block">
+                    <input placeholder="password" type="text" class="modal__input">
+                </div>
+                <div class="modal__block">
+                    <button class="modal__button">Log in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    <!-- INTRO -->
+    <div id="intro" class="intro">
+        <div class="container">
+        <div class="row">
+    
+            <div class="intro__inner">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                 <div class="intro__item">
+                    <ul class="intro__subtitle">
+                        <li class="intro__subtitle--link">Бизнес Академия </li>
+                        <li class="intro__subtitle--link active">International Smart Place</li>
+                        <li class="intro__subtitle--link">Как изменить свою жизнь?</li>
+                        <li class="intro__subtitle--link">Как начать инвестировать деньги?</li>
+                        <li class="intro__subtitle--link">Как правильно приобрести недвижимость?</li>
+                        <li class="intro__subtitle--link">Как создать свою команду?</li>
+                    </ul>
+                    <a href="#" class="intro__btn">Начать обучение</a>
+                </div>
+                </div>
+    
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="intro__item">
+                    <picture><source srcset="assets/images/backgrounds/main-laptop.webp" type="image/webp"><img src="assets/images/backgrounds/main-laptop.png" alt="" class="intro__img"></picture>
+                </div>
+            </div>
+            </div>
+          </div>
+    
+        </div>
+    </div>
+    <!-- INTRO__BURGER__MENU -->
+    <div class="intro__menu">
+        <div class="container">
+    
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+                    <div class="intro__list">
+                        <div class="intro__list--title">Клиентам</div>
+                            <a href="#" class="intro__list--subtitle">Клиентам</a>
+                            <a href="#" class="intro__list--subtitle">Клиентам</a>
+                            <a href="#" class="intro__list--subtitle">Клиентам</a>
+                            <a href="#" class="intro__list--subtitle">Клиентам</a>
+                    </div>
+                </div>
+    
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+                    <div class="intro__list">
+                        <div class="intro__list--title">Бизнесу</div>
+                            <a href="#" class="intro__list--subtitle">Бизнесу</a>
+                            <a href="#" class="intro__list--subtitle">Бизнесу</a>
+                            <a href="#" class="intro__list--subtitle">Бизнесу</a>
+                            <a href="#" class="intro__list--subtitle">Бизнесу</a>
+                    </div>
+                </div>
+    
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+                    <div class="intro__list">
+                        <div class="intro__list--title">Дистрибьютерам</div>
+                            <a href="#" class="intro__list--subtitle">Дистрибьютерам</a>
+                            <a href="#" class="intro__list--subtitle">Дистрибьютерам</a>
+                            <a href="#" class="intro__list--subtitle">Дистрибьютерам</a>
+                            <a href="#" class="intro__list--subtitle">Дистрибьютерам</a>
+                    </div>
+                </div>
+    
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+                    <div class="intro__list">
+                        <div class="intro__list--title">О компании</div>
+                            <a href="#" class="intro__list--subtitle">О компании</a>
+                            <a href="#" class="intro__list--subtitle">О компании</a>
+                            <a href="#" class="intro__list--subtitle">О компании</a>
+                            <a href="#" class="intro__list--subtitle">О компании</a>
+                    </div>
+                </div>
+    
+    
+            </div>
+    
+         <div class="intro__block">
+            <div class="row">
+                <div class="col-12">
+    
+                <div class="intro__list">
+                    <div class="intro__list--title">Продукты</div>
+                </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="intro__product" id="prod1">GrandWay</div>
+                </div>
+    
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="intro__product" id="prod2">ProfitWay</div>
+                </div>
+    
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="intro__product" id="prod3">HomeWay</div>
+                </div>
+    
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="intro__product" id="prod4">Marketing</div>
+                </div>
+    
+            </div>
+        </div>
+        </div>
+    
+        
+    </div>
+    
+    <!-- INFO -->
+    <section data-aos="fade-up" class="section section--info">
+        <div class="container-fluid">
+            <div class="section__contents">
+                <h2 class="section__title">Что такое бизнес академия</h2>
+                <h3 class="section__subtitle">International Smart Place ?</h3>
+            </div>
+            
+            <div class="info">
+                <div class="info__inner">
+                    
+                    <div class="row">
+    
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="info__item">
+                                <div class="info__title">11+</div>
+                                <div class="info__subtitle">Тем обучения</div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="info__item">
+                                <div class="info__title">10+</div>
+                                <div class="info__subtitle">ТОП бизнес тренеров</div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="info__item">
+                                <div class="info__title">25+</div>
+                                <div class="info__subtitle">Инструментов для успешной работы</div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="info__item">
+                                <div class="info__title">88ч</div>
+                                <div class="info__subtitle">Интенсивного обучения</div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="info__item">
+                                <div class="info__title">55ч</div>
+                                <div class="info__subtitle">Самостоятельной практики</div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="info__item">
+                                <div class="info__title">40ч</div>
+                                <div class="info__subtitle">Онлайн-
+                                    тренингов</div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+    
+                <div data-aos="fade-left"
+                data-aos-offset="500"
+                data-aos-duration="500" class="info__poster">
+                    <div class="info__block">
+                        <picture><source srcset="assets/images/man-image.webp" type="image/webp"><img src="assets/images/man-image.jpg" alt="" class="info__img"></picture>
+                    </div>
+                    <div class="info__content">
+                        <div class="info__text">Раньше я говорил:</div>
+                        <div class="info__text">«Я надеюсь, что все изменится». Затем я понял, что существует единственный способ, чтобы все изменилось — измениться мне самому.</div>
+                        <div class="info__author">Джим Рон</div>
+                    </div>
+                </div>  
+    
+    
+            </div>
+    
+        </div>
+    </section>
+    
+    <!-- INTRODUCTION -->
+    <section data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease"  class="section section--introduction">
+    
+        <div class="container">
+             <div class="introduction">
+                <div class="introduction__inner">
+                    <div class="introduction__text introduction__text--head">В ходе обучения вы узнаете</div>
+    
+                    <div class="row row-cols-2">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="introduction__item">
+                                <div class="introduction__title">Инвестирование</div>
+                                <div class="introduction__subtitle">Как увеличить доход за счет инвестирования?</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="introduction__item">
+                                <div class="introduction__title">Инвестирование</div>
+                                <div class="introduction__subtitle">Как в течение года выйти на ежемесячный доход в 1 млн рублей??</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="introduction__item">
+                                <div class="introduction__title">Менеджмент</div>
+                                <div class="introduction__subtitle">Как создать команду и эффективно управлять ей?</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="introduction__item">
+                                <div class="introduction__title">МЛМ</div>
+                                <div class="introduction__subtitle">Как привлечь людей в свою команду?</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="introduction__item">
+                                <div class="introduction__title">Управление бизнес процессами</div>
+                                <div class="introduction__subtitle">Как правильно организовать управление бизнес-процессами?</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="introduction__item">
+                                <div class="introduction__title">Работа с возвражениями</div>
+                                <div class="introduction__subtitle">Как бороться с вырожениями и убеждать?</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="introduction__item">
+                                <div class="introduction__title">Усиление продаж</div>
+                                <div class="introduction__subtitle">Как научиться продавать, не продавая?</div>
+                            </div>
+                        </div>
+                      </div>
+    
+                     <div class="introduction__poster">
+                         <div class="introduction__text introduction__text--bottom">
+                             Ответы на все эти вопросы даст <span class="introduction__text--blue">Бизнес Академия ISP</span>
+                         </div>
+                         <a href="#" class="introduction__btn introduction__btn--blue">Инструкция</a>
+                     </div>
+    
+                     <div data-aos="fade-up" class="introduction__banner">
+                         <div class="introduction__title introduction__title--white">Бизнес Академия ISP</div>
+                         <div class="introduction__text">Академия предоставляет мощную базу для старта и дальнейшего развития!</div>
+                         <a href="#" class="introduction__btn introduction__btn--white">Начать обучение</a>
+                     </div>
+                </div>
+                    
+            </div>
+        </div>
+    </section>
+    
+    <!-- LEARNING-1 -->
+    <section data-aos="fade-up"
+    data-aos-duration="1000" data-aos-easing="ease-in-out" id="learning" class="section section--learning">
+        <div class="container">
+            <div class="learning">
+                <div class="learning__header">
+                    <div class="learning__title">Как проходит обучение</div>
+                </div>
+    
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                    <picture><source srcset="assets/images/image1.webp" type="image/webp"><img class="learning__img" src="assets/images/image1.jpg" alt=""></picture>
+                                </div>
+                                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                    <div class="learning__title">Карьерный рост</div>
+                                <div class="learning__subtitle">Корпоративная система тренингов в Бизнес Академии поможет больше
+                                    узнать о продуктах нашей компании 
+                                    и научиться, как правильно предлагать
+                                    клиентам продукцию, чтобы заработать
+                                    свои первые деньги.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                    <picture><source srcset="assets/images/image1.webp" type="image/webp"><img class="learning__img" src="assets/images/image1.jpg" alt=""></picture>
+                                </div>
+                                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                    <div class="learning__title">Карьерный рост</div>
+                                <div class="learning__subtitle">Корпоративная система тренингов в Бизнес Академии поможет больше
+                                    узнать о продуктах нашей компании 
+                                    и научиться, как правильно предлагать
+                                    клиентам продукцию, чтобы заработать
+                                    свои первые деньги.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                    <picture><source srcset="assets/images/image1.webp" type="image/webp"><img class="learning__img" src="assets/images/image1.jpg" alt=""></picture>
+                                </div>
+                                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                    <div class="learning__title">Карьерный рост</div>
+                                <div class="learning__subtitle">Корпоративная система тренингов в Бизнес Академии поможет больше
+                                    узнать о продуктах нашей компании 
+                                    и научиться, как правильно предлагать
+                                    клиентам продукцию, чтобы заработать
+                                    свои первые деньги.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                    <picture><source srcset="assets/images/image1.webp" type="image/webp"><img class="learning__img" src="assets/images/image1.jpg" alt=""></picture>
+                                </div>
+                                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                    <div class="learning__title">Карьерный рост</div>
+                                <div class="learning__subtitle">Корпоративная система тренингов в Бизнес Академии поможет больше
+                                    узнать о продуктах нашей компании 
+                                    и научиться, как правильно предлагать
+                                    клиентам продукцию, чтобы заработать
+                                    свои первые деньги.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- STAGES -->
+    <section data-aos="zoom-out"
+    data-aos-offset="300"
+    data-aos-duration="1200"
+    data-aos-easing="ease" class="section section--stages">
+        <div class="container">
+    
+            <div class="stages">
+                <div class="stages__head">Этапы обучения</div>
+                <div class="stages__inner">
+                    <div class="row">
+    
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="stages__item">
+                                <div class="stages__level">
+                                    с I ступени
+                                </div>
+                                <div class="stages__content">
+                                    <div class="stages__name">
+                                        Start Up
+                                    </div>
+                                    <div class="stages__title">
+                                        Вводный курс
+                                    </div>
+                                    <div class="stages__subtitle">
+                                        Онлайн-тренинг для получения доступа в интернет
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="stages__item">
+                                <div class="stages__level">
+                                    с I ступени
+                                </div>
+                                <div class="stages__content">
+                                    <div class="stages__name">
+                                        Start Up
+                                    </div>
+                                    <div class="stages__title">
+                                        Вводный курс
+                                    </div>
+                                    <div class="stages__subtitle">
+                                        Онлайн-тренинг для получения доступа в интернет
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="stages__item">
+                                <div class="stages__level">
+                                    с I ступени
+                                </div>
+                                <div class="stages__content">
+                                    <div class="stages__name">
+                                        Start Up
+                                    </div>
+                                    <div class="stages__title">
+                                        Вводный курс
+                                    </div>
+                                    <div class="stages__subtitle">
+                                        Онлайн-тренинг для получения доступа в интернет
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="stages__item">
+                                <div class="stages__level">
+                                    с I ступени
+                                </div>
+                                <div class="stages__content">
+                                    <div class="stages__name">
+                                        Start Up
+                                    </div>
+                                    <div class="stages__title">
+                                        Вводный курс
+                                    </div>
+                                    <div class="stages__subtitle">
+                                        Онлайн-тренинг для получения доступа в интернет
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="stages__item">
+                                <div class="stages__level">
+                                    с I ступени
+                                </div>
+                                <div class="stages__content">
+                                    <div class="stages__name">
+                                        Start Up
+                                    </div>
+                                    <div class="stages__title">
+                                        Вводный курс
+                                    </div>
+                                    <div class="stages__subtitle">
+                                        Онлайн-тренинг для получения доступа в интернет
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="stages__item">
+                                <div class="stages__level">
+                                    с I ступени
+                                </div>
+                                <div class="stages__content">
+                                    <div class="stages__name">
+                                        Start Up
+                                    </div>
+                                    <div class="stages__title">
+                                        Вводный курс
+                                    </div>
+                                    <div class="stages__subtitle">
+                                        Онлайн-тренинг для получения доступа в интернет
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="stages__item">
+                                <div class="stages__level">
+                                    с I ступени
+                                </div>
+                                <div class="stages__content">
+                                    <div class="stages__name">
+                                        Start Up
+                                    </div>
+                                    <div class="stages__title">
+                                        Вводный курс
+                                    </div>
+                                    <div class="stages__subtitle">
+                                        Онлайн-тренинг для получения доступа в интернет
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="stages__item">
+                                <div class="stages__level">
+                                    с I ступени
+                                </div>
+                                <div class="stages__content">
+                                    <div class="stages__name">
+                                        Start Up
+                                    </div>
+                                    <div class="stages__title">
+                                        Вводный курс
+                                    </div>
+                                    <div class="stages__subtitle">
+                                        Онлайн-тренинг для получения доступа в интернет
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    <!-- ADVANTAGES -->
+    <section data-aos="fade-down"
+    data-aos-duration="800" data-aos-easing="ease-in-quad" id="advantages" class="section section--advantages">
+        
+        <div class="container">
+            <div class="learning">
+                <div class="learning__header">
+                    <div class="learning__title">Преимущества</div>
+                </div>
+    
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                    <picture><source srcset="assets/images/image1.webp" type="image/webp"><img class="learning__img" src="assets/images/image1.jpg" alt=""></picture>
+                                </div>
+                                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                    <div class="learning__title">Карьерный рост</div>
+                                <div class="learning__subtitle">Корпоративная система тренингов в Бизнес Академии поможет больше
+                                    узнать о продуктах нашей компании 
+                                    и научиться, как правильно предлагать
+                                    клиентам продукцию, чтобы заработать
+                                    свои первые деньги.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                    <picture><source srcset="assets/images/image1.webp" type="image/webp"><img class="learning__img" src="assets/images/image1.jpg" alt=""></picture>
+                                </div>
+                                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                    <div class="learning__title">Карьерный рост</div>
+                                <div class="learning__subtitle">Корпоративная система тренингов в Бизнес Академии поможет больше
+                                    узнать о продуктах нашей компании 
+                                    и научиться, как правильно предлагать
+                                    клиентам продукцию, чтобы заработать
+                                    свои первые деньги.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                    <picture><source srcset="assets/images/image1.webp" type="image/webp"><img class="learning__img" src="assets/images/image1.jpg" alt=""></picture>
+                                </div>
+                                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                    <div class="learning__title">Карьерный рост</div>
+                                <div class="learning__subtitle">Корпоративная система тренингов в Бизнес Академии поможет больше
+                                    узнать о продуктах нашей компании 
+                                    и научиться, как правильно предлагать
+                                    клиентам продукцию, чтобы заработать
+                                    свои первые деньги.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                    <picture><source srcset="assets/images/image1.webp" type="image/webp"><img class="learning__img" src="assets/images/image1.jpg" alt=""></picture>
+                                </div>
+                                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                    <div class="learning__title">Карьерный рост</div>
+                                <div class="learning__subtitle">Корпоративная система тренингов в Бизнес Академии поможет больше
+                                    узнать о продуктах нашей компании 
+                                    и научиться, как правильно предлагать
+                                    клиентам продукцию, чтобы заработать
+                                    свои первые деньги.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+    
+    </section>
+    
+    <!-- TEAM -->
+    <section data-aos="fade-right" data-aos-duration="900" id="team" class="section section--team">
+        <div class="container">
+    
+    
+            <div class="team">
+                <div class="team__header">
+                    <div class="team__title">Преподаватели INTERNATIONAL SMART PLACE </div>
+                    <div class="team__subtitle">
+                        Это высококвалифицированная команда управленцев, менеджеров, бизнес-тренеров и экспертов. Общение с ними даст вам не только новые знания и идеи, но и импульс к их реализации
+                    </div>
+    
+                    <div class="team__inner">
+                        
+                        <div class="row">
+    
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="team__item">
+                                    <picture><source srcset="../assets/images/team/team1.webp" type="image/webp"><img src="../assets/images/team/team1.jpg" alt="" class="team__img"></picture>
+                                    <div class="team__content">
+                                        <div class="team__text">Эксперт по бизнесу</div>
+                                        <div class="team__name">Брюнеткин Максим</div>
+                                        <div class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер </div>
+                                    </div>
+                                </div>
+                                <div class="team__item description">
+                                     <div class="team__content">
+                                         <div  class="team__text">
+                                                <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                                <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                                <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                                <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                                <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+                                         </div>
+                                         <a  href="#" class="team__link">Подробнее</a>
+                                     </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="team__item">
+                                    <picture><source srcset="../assets/images/team/team2.webp" type="image/webp"><img src="../assets/images/team/team2.jpg" alt="" class="team__img"></picture>
+                                    <div class="team__content">
+                                        <div class="team__text">Эксперт по бизнесу</div>
+                                        <div class="team__name">Сергей Фрост</div>
+                                        <div class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер </div>
+                                    </div>
+                                </div>
+                                <div class="team__item description">
+                                    <div class="team__content">
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <a  href="#" class="team__link">Подробнее</a>
+                                    </div>
+                               </div>
+                            </div>
+    
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="team__item">
+                                    <picture><source srcset="../assets/images/team/team3.webp" type="image/webp"><img src="../assets/images/team/team3.jpg" alt="" class="team__img"></picture>
+                                    <div class="team__content">
+                                        <div class="team__text">Эксперт по бизнесу</div>
+                                        <div class="team__name">Дарья Мороз</div>
+                                        <div class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер </div>
+                                    </div>
+                                </div>
+                                <div class="team__item description">
+                                    <div class="team__content">
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <a  href="#" class="team__link">Подробнее</a>
+                                    </div>
+                               </div>
+                            </div>
+    
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="team__item">
+                                    <picture><source srcset="../assets/images/team/team1.webp" type="image/webp"><img src="../assets/images/team/team1.jpg" alt="" class="team__img"></picture>
+                                    <div class="team__content">
+                                        <div class="team__text">Эксперт по бизнесу</div>
+                                        <div class="team__name">Брюнеткин Максим</div>
+                                        <div class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер </div>
+                                    </div>
+                                </div>
+                                <div class="team__item description">
+                                    <div class="team__content">
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <a  href="#" class="team__link">Подробнее</a>
+                                    </div>
+                               </div>
+                            </div>
+    
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="team__item">
+                                    <picture><source srcset="../assets/images/team/team2.webp" type="image/webp"><img src="../assets/images/team/team2.jpg" alt="" class="team__img"></picture>
+                                    <div class="team__content">
+                                        <div class="team__text">Эксперт по бизнесу</div>
+                                        <div class="team__name">Сергей Фрост</div>
+                                        <div class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер </div>
+                                    </div>
+                                </div>
+                                <div class="team__item description">
+                                    <div class="team__content">
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <a  href="#" class="team__link">Подробнее</a>
+                                    </div>
+                               </div>
+                            </div>
+    
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="team__item">
+                                    <picture><source srcset="../assets/images/team/team3.webp" type="image/webp"><img src="../assets/images/team/team3.jpg" alt="" class="team__img"></picture>
+                                    <div class="team__content">
+                                        <div class="team__text">Эксперт по бизнесу</div>
+                                        <div class="team__name">Дарья Мороз</div>
+                                        <div class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер </div>
+                                    </div>
+                                </div>
+                                <div class="team__item description">
+                                    <div class="team__content">
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <div  class="team__text">Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер компании Spacebot Bitteam</div>
+    
+                                        <a  href="#" class="team__link">Подробнее</a>
+                                    </div>
+                               </div>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                </div>
+    
+                
+            </div>
+    
+    
+        </div>
+    </section>
+    
+    <!-- COOPERATION -->
+    <section id="cooperation" class="section section--cooperation">
+        <div class="container">
+            <div class="cooperation__header">
+                <div class="cooperation__title">Как стать партнером холдинга GrandWay</div>
+                <a href="#" class="cooperation__link">Начать обучение</a>
+            </div>
+            
+            <div data-aos="fade" data-aos-duration="900" class="cooperation">
+                <div class="cooperation__inner">
+    
+                        <div class="cooperation__item">
+                            <div class="cooperation__cell">
+                                01
+                            </div>
+                            <div  class="cooperation__content">
+                                <div class="cooperation__step">
+                                    Регистрация
+                                </div>
+                                <div class="cooperation__text">
+                                    Пройти регистрацию в Бизнес Академии ISP
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div  class="cooperation__item">
+                            <div class="cooperation__cell active">
+                                02
+                            </div>
+                            <div class="cooperation__content">
+                                <div class="cooperation__step">
+                                    Регистрация
+                                </div>
+                                <div class="cooperation__text">
+                                    Пройти регистрацию в Бизнес Академии ISP
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div  class="cooperation__item">
+                            <div class="cooperation__cell">
+                                03
+                            </div>
+                            <div class="cooperation__content">
+                                <div class="cooperation__step">
+                                    Регистрация
+                                </div>
+                                <div class="cooperation__text">
+                                    Пройти регистрацию в Бизнес Академии ISP
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div  class="cooperation__item">
+                            <div class="cooperation__cell">
+                                04
+                            </div>
+                            <div class="cooperation__content">
+                                <div class="cooperation__step">
+                                    Регистрация
+                                </div>
+                                <div class="cooperation__text">
+                                    Пройти регистрацию в Бизнес Академии ISP
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div  class="cooperation__item">
+                            <div class="cooperation__cell">
+                                05
+                            </div>
+                            <div class="cooperation__content">
+                                <div class="cooperation__step">
+                                    Регистрация
+                                </div>
+                                <div class="cooperation__text">
+                                    Пройти регистрацию в Бизнес Академии ISP
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div  class="cooperation__item">
+                            <div class="cooperation__cell">
+                                06
+                            </div>
+                            <div class="cooperation__content">
+                                <div class="cooperation__step">
+                                    Регистрация
+                                </div>
+                                <div class="cooperation__text">
+                                    Пройти регистрацию в Бизнес Академии ISP
+                                </div>
+                            </div>
+                        </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FEEDBACK -->
+    <section data-aos="zoom-in" data-aos-duration="800" class="section section--feedback">
+        <div class="container">
+    
+            <div class="feedback">
+    
+                <div class="feedback__header">
+                    <div class="feedback__title">Отзывы наших клиентов</div>
+                </div>
+    
+                <div class="feedback__inner">
+    
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+    
+                            <div class="swiper-slide">
+                                <div class="feedback__item">
+                                    <div class="feedback__block">
+                                        <picture><source srcset="assets/images/icons/feedback-icon.webp" type="image/webp"><img src="assets/images/icons/feedback-icon.png" alt="" class="feedback__img"></picture>
+                                    </div>
+                                    <div class="feedback__block">
+                                        <div class="feedback__text">
+                                            Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер 
+                                        </div>
+                                        <div class="row row-cols-2">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 col-5">
+                                                <div class="feedback__type">Клиент</div>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-7 col-md-8 col-sm-7 col-7">
+                                                <div class="feedback__type">Город</div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 col-5">
+                                                <div class="feedback__info">Мария Петрова</div>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-7 col-md-8 col-sm-7 col-7">
+                                                <div class="feedback__info">Санкт-Петербург</div>
+                                            </div>
+                                        </div>
+                                        <div class="feedback__rating"  >
+                                            <svg class="footer__icon footer__icon--star evaluation" data-number="1">
+                                                <use xlink:href="#star"></use>
+                                            </svg>
+    
+                                            <svg class="footer__icon footer__icon--star  evaluation" data-number="2">
+                                                <use xlink:href="#star"></use>
+                                            </svg>
+    
+                                            <svg class="footer__icon footer__icon--star  evaluation" data-number="3">
+                                                <use xlink:href="#star"></use>
+                                            </svg>
+    
+                                            <svg class="footer__icon footer__icon--star  evaluation" data-number="4">
+                                                <use xlink:href="#star"></use>
+                                            </svg>
+    
+                                            <svg class="footer__icon footer__icon--star" data-number="5">
+                                                <use xlink:href="#star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="feedback__item">
+                                    <div class="feedback__block">
+                                        <picture><source srcset="assets/images/icons/feedback-icon.webp" type="image/webp"><img src="assets/images/icons/feedback-icon.png" alt="" class="feedback__img"></picture>
+                                    </div>
+                                    <div class="feedback__block">
+                                        <div class="feedback__text">
+                                            Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер 
+                                        </div>
+                                        <div class="row row-cols-2">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 col-5">
+                                                <div class="feedback__type">Клиент</div>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-7 col-md-8 col-sm-7 col-7">
+                                                <div class="feedback__type">Город</div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 col-5">
+                                                <div class="feedback__info">Adam Longer</div>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-7 col-md-8 col-sm-7 col-7">
+                                                <div class="feedback__info">London</div>
+                                            </div>
+                                        </div>
+                                        <div class="feedback__rating" data-value="2">
+                                            <svg class="footer__icon footer__icon--star evaluation" data-number="1">
+                                                <use xlink:href="#star"></use>
+                                            </svg>
+    
+                                            <svg class="footer__icon footer__icon--star evaluation" data-number="2">
+                                                <use xlink:href="#star"></use>
+                                            </svg>
+    
+                                            <svg class="footer__icon footer__icon--star  evaluation" data-number="3">
+                                                <use xlink:href="#star"></use>
+                                            </svg>
+    
+                                            <svg class="footer__icon footer__icon--star  evaluation" data-number="4">
+                                                <use xlink:href="#star"></use>
+                                            </svg>
+    
+                                            <svg class="footer__icon footer__icon--star  evaluation" data-number="5">
+                                                <use xlink:href="#star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="feedback__item">
+                                    <div class="feedback__block">
+                                        <picture><source srcset="assets/images/icons/feedback-icon.webp" type="image/webp"><img src="assets/images/icons/feedback-icon.png" alt="" class="feedback__img"></picture>
+                                    </div>
+                                    <div class="feedback__block">
+                                        <div class="feedback__text">
+                                            Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер Пятилетний опыт работы с криптовалютой. Идейний вдохновитель и ведущий спикер 
+                                        </div>
+                                        <div class="row row-cols-2">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 col-5">
+                                                <div class="feedback__type">Клиент</div>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-7 col-md-8 col-sm-7 col-7">
+                                                <div class="feedback__type">Город</div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 col-5">
+                                                <div class="feedback__info">John Doe</div>
+                                            </div>
+                                            <div class="col-xl-7 col-lg-7 col-md-8 col-sm-7 col-7">
+                                                <div class="feedback__info">Waгsaw</div>
+                                            </div>
+                                        </div>
+                                        <div class="feedback__rating" data-value="3">
+                                            <svg class="footer__icon footer__icon--star  evaluation" data-number="1">
+                                                <use xlink:href="#star"></use>
+                                            </svg>
+    
+                                            <svg class="footer__icon footer__icon--star  evaluation" data-number="2">
+                                                <use xlink:href="#star"></use>
+                                            </svg>
+    
+                                            <svg class="footer__icon footer__icon--star  evaluation" data-number="3">
+                                                <use xlink:href="#star"></use>
+                                            </svg>
+    
+                                            <svg class="footer__icon footer__icon--star  evaluation" data-number="4">
+                                                <use xlink:href="#star"></use>
+                                            </svg>
+    
+                                            <svg class="footer__icon footer__icon--star  evaluation" data-number="5">
+                                                <use xlink:href="#star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                        <div class="swiper-pagination"></div>
+                      </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    </section>
+    
+    
+  </div>
+
+  <footer class="footer">
+      <div class="container">
+          <div class="footer__inner">
+            <div class="row">
+  
+              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class="footer__item">
+                  <div class="footer__logo">International Smart Place</div>
+                </div>
+              </div>
+  
+              <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                <div class="footer__item">
+                  <div class="footer__menu">
+                      <a data-scroll href="#intro" class="footer__link">Главная</a>
+                      <a data-scroll href="#learning" class="footer__link">Как проходит обучение</a>
+                      <a data-scroll href="#advantages" class="footer__link">Преимущества</a>
+                      <a data-scroll href="#team" class="footer__link">Преподаватели</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <div class="footer__item">
+                  <div class="footer__text">Подписывайтесь</div>
+                  <div class="footer__social">
+                      <a href="#" class="footer__block">
+                          <svg class="footer__icon footer__icon--social">
+                              <use xlink:href="#twitter"></use>
+                          </svg>
+                      </a>
+  
+                      <a href="#" class="footer__block">
+                        <svg class="footer__icon footer__icon--social">
+                            <use xlink:href="#linked"></use>
+                        </svg>
+                      </a>
+  
+                      <a href="#" class="footer__block">
+                        <svg class="footer__icon footer__icon--social">
+                            <use xlink:href="#youtube"></use>
+                        </svg>
+                      </a>
+  
+                      <a href="#" class="footer__block">
+                        <svg class="footer__icon footer__icon--social">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+  
+                    <a href="#" class="footer__block">
+                      <svg class="footer__icon footer__icon--social">
+                          <use xlink:href="#linked"></use>
+                      </svg>
+                    </a>
+  
+                    <a href="#" class="footer__block">
+                      <svg class="footer__icon footer__icon--social">
+                          <use xlink:href="#youtube"></use>
+                      </svg>
+                    </a>
+  
+                  </div>
+                </div>
+              </div>
+  
+            </div> <!-- row -->
+          </div> <!-- .footer__inner -->
+      </div> <!-- .container -->
+  </footer>  <script src="assets/js/main.min.js"></script>
+  
+</body>
+</html>

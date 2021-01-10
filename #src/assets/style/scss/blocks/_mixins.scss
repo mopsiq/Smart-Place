@@ -1,0 +1,6 @@
+@mixin button-large($backgroundColor, $color, $padding) {
+    border-radius: 10px;
+    background-color: $backgroundColor;
+    color: $color;
+    padding: $padding;
+}

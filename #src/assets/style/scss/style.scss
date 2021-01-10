@@ -1,0 +1,100 @@
+
+@import 'fonts.scss';
+@import 'blocks/vars.scss';
+@import 'blocks/resize.scss';
+@import 'blocks/custom.scss';
+@import 'blocks/mixins';
+
+
+body, html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: Gordita, Arial, Helvetica, sans-serif;
+}
+
+.scroll-stop {
+  overflow: hidden;
+  padding-right: 17px;
+}
+
+.content {
+  overflow: hidden;
+}
+.section {
+  margin: 4rem 0;
+}
+
+.section__contents {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section__title {
+    font-size: $fontXL;
+    font-weight: 300;
+    color: #323448;
+}
+
+.section__subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: $blue;
+}
+
+.disabled {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+// Blocks 
+@import 'blocks/header.scss';
+@import 'blocks/intro.scss';
+@import 'blocks/info';
+@import 'blocks/introduction.scss';
+@import 'blocks/learning.scss';
+@import 'blocks/team.scss';
+@import 'blocks/cooperation.scss';
+@import 'blocks/stages.scss';
+@import 'blocks/feedback.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/modal.scss';
+@import 'blocks/media.scss';
+
+// Boostrap
+@import '../../../../node_modules/bootstrap/scss/functions';
+@import '../../../../node_modules/bootstrap/scss/variables';
+@import '../../../../node_modules/bootstrap/scss/mixins';
+@import '../../../../node_modules/bootstrap/scss/grid';
+
+$container-max-widths: (
+    xl: 1260px
+);
+
+// SWIPER
+@import '../../../../node_modules/swiper/swiper-bundle.min';
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 0;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #979797;
+}
+
+// AOS
+@import "../../../node_modules/aos/dist/aos.css";
+
+

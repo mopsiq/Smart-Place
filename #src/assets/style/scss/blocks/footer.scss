@@ -1,0 +1,70 @@
+.footer {
+  background-color: $blue;
+  padding: 1rem 0;
+  color: $white;
+}
+
+.footer__item {
+  margin: 2rem 0;
+}
+
+.footer__logo {
+  max-width: 150px;
+  font-size: $fontStandartX;
+  font-weight: 500;
+  position: relative;
+  z-index: 10;
+  &:before {
+    content: url(../images/icons/logo-light.png);
+    position: absolute;
+    top: 0rem;
+    right: 8rem;
+    z-index: -1;
+  }
+}
+
+.footer__link {
+  color: $white;
+  margin-right: 3rem;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.footer__social {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.footer__block {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__icon {
+  width: 20px;
+  height: 20px;
+
+  &--star {
+    fill: $white;
+      &.evaluation {
+        fill: #FF8D23;
+      }
+      // &:hover {
+      //   cursor: pointer;
+      // }
+  }
+  
+  &--social {
+    fill: $white;
+      &:hover {
+        fill: #7e2929;
+        cursor: pointer;
+      }
+  }
+}
