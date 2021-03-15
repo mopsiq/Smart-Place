@@ -1098,6 +1098,9 @@ body, html {
 .footer__icon {
     width: 20px;
     height: 20px;
+    -webkit-transition: fill .2s ease-in;
+    -o-transition: fill .2s ease-in;
+    transition: fill .2s ease-in;
 }
 
 .footer__icon--star {
@@ -1113,7 +1116,7 @@ body, html {
 }
 
 .footer__icon--social:hover {
-    fill: #7e2929;
+    fill: #e48257;
     cursor: pointer;
 }
 
